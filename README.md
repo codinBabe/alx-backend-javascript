@@ -1,0 +1,1 @@
+Alx JS specialization task
