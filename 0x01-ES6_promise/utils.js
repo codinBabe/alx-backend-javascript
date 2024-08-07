@@ -1,9 +1,9 @@
-function createUser(firstName = "Guillaume", lastName = "Salva") {
-  return Promise.resolve({ firstName: firstName, lastName: lastName });
+function createUser() {
+  return Promise.resolve({ firstName: 'Guillaume', lastName: 'Salva' });
 }
 
-function uploadPhoto(userId = 1) {
-  return Promise.resolve({ status: 200, body: `photo-profile-${userId}` });
+function uploadPhoto() {
+  return Promise.resolve({ status: 200, body: `photo-profile-1` });
 }
 
 export { uploadPhoto, createUser };
