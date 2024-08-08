@@ -1,5 +1,18 @@
-import getNeighborhoodsList from "./0x00-ES6_basic/2-arrow.js";
+import HolbertonCourse from "./0x02-ES6_classes/2-hbtn_course.js";
 
-const neighborhoodsList = new getNeighborhoodsList();
-const res = neighborhoodsList.addNeighborhood("Noe Valley");
-console.log(res);
+const c1 = new HolbertonCourse("ES6", 1, ["Bob", "Jane"]);
+console.log(c1.name);
+c1.name = "Python 101";
+console.log(c1);
+
+try {
+  c1.name = 12;
+} catch (err) {
+  console.log(err);
+}
+
+try {
+  const c2 = new HolbertonCourse("ES6", "1", ["Bob", "Jane"]);
+} catch (err) {
+  console.log(err);
+}

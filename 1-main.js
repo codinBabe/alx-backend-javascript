@@ -1,4 +1,3 @@
-import taskBlock from "./0x00-ES6_basic/1-block-scoped.js";
+import initializeRooms from "./0x02-ES6_classes/1-make_classrooms.js";
 
-console.log(taskBlock(true));
-console.log(taskBlock(false));
+console.log(initializeRooms());
