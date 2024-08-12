@@ -6,7 +6,7 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
         (newGrade) => newGrade.studentId === student.id
       );
       if (grade.length === 0) {
-        return { ...student, grade: "N/A" };
+        return { ...student, grade: 'N/A' };
       }
       return { ...student, grade: grade[0].grade };
     });
