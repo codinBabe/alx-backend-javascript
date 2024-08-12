@@ -1,4 +1,7 @@
-import Currency from "./0x02-ES6_classes/3-currency.js";
+import getListStudents from "./0x03-ES6_data_manipulation/0-get_list_students.js";
+import getStudentIdsSum from "./0x03-ES6_data_manipulation/3-get_ids_sum.js";
 
-const dollar = new Currency('$', 'Dollars');
-console.log(dollar.displayFullCurrency());
+const students = getListStudents();
+const value = getStudentIdsSum(students);
+
+console.log(value);

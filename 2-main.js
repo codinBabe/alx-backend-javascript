@@ -1,18 +1,6 @@
-import HolbertonCourse from "./0x02-ES6_classes/2-hbtn_course.js";
+import getListStudents from "./0x03-ES6_data_manipulation/0-get_list_students.js";
+import getStudentsByLocation from "./0x03-ES6_data_manipulation/2-get_students_by_loc.js";
 
-const c1 = new HolbertonCourse("ES6", 1, ["Bob", "Jane"]);
-console.log(c1.name);
-c1.name = "Python 101";
-console.log(c1);
+const students = getListStudents();
 
-try {
-  c1.name = 12;
-} catch (err) {
-  console.log(err);
-}
-
-try {
-  const c2 = new HolbertonCourse("ES6", "1", ["Bob", "Jane"]);
-} catch (err) {
-  console.log(err);
-}
+console.log(getStudentsByLocation(students, "San Francisco"));
