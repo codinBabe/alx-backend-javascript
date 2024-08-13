@@ -1,9 +1,10 @@
+/* eslint-disable array-callback-return */
 export default function cleanSet(value, startString) {
-  let str = "";
-  for (const item of value) {
-    if (item.startsWith(startString)) {
-      str += item.slice(startString.length) + '-';
-    }
-  }
-  return str.slice(0, str.length - 1);
+	if (startString === undefined || startString.length === 0) {
+    return '';
+	}
+	return [...value]
+		.filter((str) => (str !== undefined ? str.startsWith(startString) : ''))
+		.map((str) => (str !== undefined ? str.slice(startString.length) : ''))
+		.join('-');
 }
