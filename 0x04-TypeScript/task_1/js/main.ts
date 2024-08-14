@@ -22,7 +22,7 @@ const teacher3: Teacher = {
   contract: false,
 };
 
-//console.log(teacher3);
+console.log(teacher3);
 
 //2. Write an interface named Directors that extends Teacher. It requires an attribute named numberOfReports(number)
 
@@ -37,7 +37,7 @@ const director1: Directors = {
   fullTimeEmployee: true,
   numberOfReports: 17,
 };
-// console.log(director1);
+console.log(director1);
 
 //3. Write a function printTeacher:
 // It accepts two arguments firstName and lastName
@@ -53,7 +53,7 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
   return `${firstName.charAt(0)}. ${lastName}`;
 };
 
-//console.log(printTeacher("John", "Doe"));
+console.log(printTeacher("John", "Doe"));
 
 //4. Write a Class named StudentClass:
 // The constructor accepts firstName(string) and lastName(string) arguments

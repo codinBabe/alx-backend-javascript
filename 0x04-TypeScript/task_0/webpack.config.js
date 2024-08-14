@@ -27,7 +27,6 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./index.html",
       title: "Development",
     }),
   ],
