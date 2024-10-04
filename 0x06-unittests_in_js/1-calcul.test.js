@@ -1,5 +1,5 @@
-import assert from 'assert';
-import calculateNumber from './1-calcul.js';
+const assert = require('assert');
+const calculateNumber =  require('./1-calcul')
 
 describe('calculateNumber', function () {
   it('should return 6 when type is SUM and adding 1.4, 4.5', function () {
