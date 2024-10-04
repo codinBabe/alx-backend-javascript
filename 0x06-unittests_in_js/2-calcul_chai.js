@@ -13,5 +13,4 @@ function calculateNumber(type, a, b) {
     return aRound / bRound;
   }
 }
-
-export default calculateNumber
+module. exports = calculateNumber;
